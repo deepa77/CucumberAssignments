@@ -26,8 +26,6 @@ public class AddEmployeeSteps extends CommonMethods {
     }
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
-
-        // WebElement pimOption = driver.findElement(By.xpath("(//*[text()='PIM'])[1]"));
         click(dashboardPage.pimOption);
     }
     @When("user clicks on Add Employee button")
