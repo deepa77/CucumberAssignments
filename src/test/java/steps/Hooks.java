@@ -8,11 +8,12 @@ public class Hooks extends CommonMethods {
 
     @Before
     public  void start(){
+
         openBrowserAndLaunchApplication();
     }
 
     @After
     public void end(){
-        driver.close();
+        closeBrowser();
     }
 }

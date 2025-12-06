@@ -16,6 +16,8 @@ public class LoginPage extends CommonMethods {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//*[@class='oxd-text oxd-text--p oxd-alert-content-text']")
+    public WebElement errorMessageLoc;
 
 
     public LoginPage(){

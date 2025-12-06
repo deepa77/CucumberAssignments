@@ -9,11 +9,9 @@ import utils.CommonMethods;
 @CucumberOptions(
         features = "src/test/resources/features/",
         glue="steps",
-        plugin = {
-                "pretty",
-                "html:target/cucumber.html",
-                "json:target/cucumber.json"
-        }
+        dryRun = false,
+        tags ="@param"
+
 )
 
 public class RunnerClass extends CommonMethods {

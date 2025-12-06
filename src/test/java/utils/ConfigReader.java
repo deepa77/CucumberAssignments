@@ -1,16 +1,12 @@
 package utils;
 
-import io.cucumber.core.options.Constants;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
     public static String read(String key)  {
-
         return read(key, Constants.CONFIG_FILE_PATH);
-
     }
 
     public static String read(String key, String path)  {
